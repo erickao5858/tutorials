@@ -5,10 +5,10 @@ Before start creating the VM, download the Ubuntu 18.04 system image first from 
 CAUTION: You must use Ubuntu 18.04. Otherwise, you may face unexpected errors during the "npm install" command.
 CAUTION: Set the disk size to 50GB before creating the VM.
 Then, use the image to install the system. 
-[image:use image]
+![image](https://user-images.githubusercontent.com/31674374/112165388-cffb1180-8c42-11eb-879b-14159b566d64.png)
 In the welcome page, choose "Install Ubuntu".
 In the fourth page, do not change anything.
-[image:fourth page]
+![image](https://user-images.githubusercontent.com/31674374/112165430-d8534c80-8c42-11eb-87c4-d4faa1ebe7e4.png)
 CAUTION: Do not use minimal installation.
 
 ## Step 2: Installing Guest Additions [Optional]
@@ -18,7 +18,7 @@ Open a terminal and execute the following commands.
 - reboot
 
 After the system restarted, insert guest addtions image and install the softwares.
-[image: guest addtions]
+![image](https://user-images.githubusercontent.com/31674374/112165491-e739ff00-8c42-11eb-9f93-e67ca8c1e508.png)
 After the installation, reboot the system.
 
 ## Step 3: Installing GIT and VS Code
@@ -31,7 +31,7 @@ If you see a output with "git version x.xx.x", then you successfully installed i
 Download the VS Code installer from [here.](https://code.visualstudio.com/docs/?dv=linux64_deb)
 Execute the installer inside the VM.
 After the installation of VS Code, open it and install "Live Share Extension Pack".
-[image: liveshare]
+![image](https://user-images.githubusercontent.com/31674374/112165559-f751de80-8c42-11eb-9734-4ba2e780d679.png)
 
 ## Step 4: Fork Doubtfire Repositories and Clone Them to VM
 Open both links:
@@ -39,7 +39,7 @@ Open both links:
 - [Doubtfire-api](https://github.com/doubtfire-lms/doubtfire-api)
 
 Click the fork button at the upper right side of both websites.
-[image: fork]
+![image](https://user-images.githubusercontent.com/31674374/112165600-020c7380-8c43-11eb-9f74-f545eb38bb92.png)
 Then, execute the following commands.
 - cd ~/Desktop/
 - git clone https://github.com/[YOUR GITHUB ACCOUNT NAME]/doubtfire-api
@@ -52,7 +52,7 @@ After installing the dependencies, execute the following command to verify wheth
 - bundle exec rails s
 
 If the output looks exactly the same way with the image below, move to the frontend project.
-[image: backend]
+![image](https://user-images.githubusercontent.com/31674374/112165642-09cc1800-8c43-11eb-8fc4-0f4344a6f1c9.png)
 Keep the backend terminal alives all the time because you need it handling data.
 Open another terminal and execute the following commands.
 - cd ~/Desktop/doubtfire-web/
@@ -62,10 +62,10 @@ After installing the dependencies, execute the following command to verify wheth
 - npm start
 
 If the output looks exactly the same way with the image below, then it's finished.
-[image: frontend]
+![image](https://user-images.githubusercontent.com/31674374/112167385-84496780-8c44-11eb-9b3b-f3e709767a83.png)
 
 Finally, open the firefox broswer and go this website: https://localhost:4200/.
 Type in username "acain" and password "password".
 If you see it does functioning, you can take a screenshot as an evidence and post it in the team channel.
-[image: screenshot]
+![image](https://user-images.githubusercontent.com/31674374/112165678-10f32600-8c43-11eb-8add-3a593e172271.png)
 # Congratulation!
